@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Bot 2.0</title>
+	<link rel="stylesheet" href="musicbotstyle.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	
+  </head>
+  <h1>
+  	<ul class="nav justify-content-center">
+  		<li class="nav-item">
+  	 	 <a class="nav-link active" href="index.html">Home</a>
+  		</li>
+  		<li class="nav-item">
+  	 	 <a class="nav-link" href="#">Music Bot 2.0</a>
+  		</li>
+  	</ul>
+	</h1>
+
+  <h2 class="text-center">
+	I Created My Own Music Bot for Discord!
+  </h2>
+  
+  <body style="background-color:lightseagreen;">
+   <p>
+   <br></br>
+	Since the popular Discord music bot "Rythm" was shutdown by Youtube, my friends and I in our server had no way 
+   for all of us to listen to the same track at the same time. So, I decided to take this as an opportunity learn 
+   Javasctipt and build one! You can view the code on Github <a href="https://github.com/JonRhea/Music-Bot-2.0">here!</a><br></br>
+   <img src="https://418y-bucket.s3.amazonaws.com/musicbotprofile.PNG" width="300" height="400" alt="Music Bot 2.0's Profile">
+   </p> 
+   <p>It's called 2.0 because the first one I had was someone else's (it was used with permission!). This 2.0 version is one that I build
+    compeletly from scratch. Obviously, I used the Discord.js API to create this bot. <br></br>
+   </p>
+   <p>
+	To play a song, type "/play". The bot accepts search keywords and plays the first result of Youtube based on those serach keywords.
+	This does mean you have to be somewhat specific to get the song you want. However, typoes are usually not a big deal
+	 due to Youtube's search engine.
+	 <img src="https://418y-bucket.s3.amazonaws.com/songsearch.PNG" width="1000px" alt="Searching for a song"> 
+	 <br></br>
+	 <img src="https://418y-bucket.s3.amazonaws.com/playingsong.PNG" width="1000" "alt="Playing the requested song">
+	  <br></br>
+   </p>
+   <p>
+   If someone want's to stop listening to a song for any reason, they can use the "/skip" command to stop playing 
+   the current song and play the next song if there is a song in the queue. <br></br>
+   <img src="https://418y-bucket.s3.amazonaws.com/songskip.PNG" width="1000" "alt="Skipping the current song">
+   <br></br>
+   </p>
+   <p>
+	Anyone can request a song to play. If a song is already playing and a song is requested, the requested song will be put 
+	into a queue. Using "/queue", you can view what song is playing, what songs are in the queue, who requested the song, and
+	how long the song is. Also, 10 songs are listed on a page. If you want to view a page that is not the first page, the command 
+	allows you to add a number to it to view that page number of the queue. 
+	<img src="https://418y-bucket.s3.amazonaws.com/songqueue.PNG" width="1000px" alt="Song Queue"><br></br>
+   </p>
+   <p>
+  	 If a song is playing that you don't recognize or you want to know how much longer the song has to go, use the "/info" command.
+   	This command displays the current song playing and shows a bar which shows how much longer the song has. <br></br> 
+   	<img src="https://418y-bucket.s3.amazonaws.com/songinfo.PNG" width="1000px" alt="Song Queue"><br></br>
+   </p>
+   <p>
+   And that's the bot! Considering I had not messed with Javascript for Node.js before, I feel pretty proud of this. 
+   </p>
+   
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
