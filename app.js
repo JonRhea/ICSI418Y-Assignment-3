@@ -16,17 +16,6 @@ router.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html'); //Gets the html
 });
 
-
-
- router.post('/submission', function(req, res) {
-	var first = parseInt(req.body.firstNumber);
-	var second = parseInt(req.body.lastNumber);
-    var sum = Number(first + second);
-    res.send('The total is: ' + Number(sum));
-   });
-
-
-
 //console.log(path.join('/dist', 'index.html'));
 app.use(express.static(__dirname + "/HTMLPages/"));
 app.use('/', router);
